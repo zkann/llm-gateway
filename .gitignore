@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Ledger output
+*.ledger.jsonl
+/out/
+
+.DS_Store
