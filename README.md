@@ -115,6 +115,6 @@ queueing; the surface is deliberately small enough to audit.
 
 ## License
 
-MIT. Built by [Zak Kann](https://zakkann.com). Part of
-[OpsCenter](https://github.com/zkann/cost-engine), a suite of applied-AI,
-automation, and cloud tools.
+MIT. Built by [Zak Kann](https://zakkann.com). Sibling project:
+[cost-engine](https://github.com/zkann/cost-engine), a FinOps analyzer that
+finds dollar-quantified savings in an AWS bill.
