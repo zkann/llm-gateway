@@ -83,10 +83,8 @@ export class AllModelsFailedError extends Error {
     readonly task: string,
     readonly attempts: AttemptRecord[],
   ) {
-    super(
-      `all models failed for task "${task}" after ${attempts.length} attempt(s): ` +
-        attempts.map((a) => `${a.provider}/${a.model}: ${a.error}`).join("; "),
-    );
+    const trail = attempts.map((a) => `${a.provider}/${a.model}: ${a.error}`).join("; ");
+    super(`all models failed for task "${task}" after ${attempts.length} attempt(s): ${trail}`);
     this.name = "AllModelsFailedError";
   }
 }
